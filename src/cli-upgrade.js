@@ -1,3 +1,5 @@
+import { cliCore } from '@0bdx/cli-core';
+
 /**
  * The main starter for 0dbx's upgrading cli app.
  *
@@ -18,5 +20,5 @@ export default function cliUpgrade(argv) {
             } argv[${i}] is type '${typeof a}' not 'string'`);
     });
 
-    return `cliUpgrade(): ${argv}`;
+    return `cliUpgrade() with ${cliCore()}: ${argv}`;
 }

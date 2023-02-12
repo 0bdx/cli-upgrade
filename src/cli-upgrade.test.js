@@ -2,7 +2,7 @@ import equal from './private-methods/equal.js';
 import throws from './private-methods/throws.js';
 
 /**
- * cli() unit tests.
+ * cliUpgrade() unit tests.
  * 
  * @typedef {import('./cli-upgrade').default} cliUpgrade
  * 
@@ -28,7 +28,7 @@ export default function cliUpgradeTest(f) {
 
     // Ok.
     equal(f([]),
-            'cliUpgrade(): ');
+            'cliUpgrade() with cliCore(): ');
     equal(f(['Ok','yup']),
-            'cliUpgrade(): Ok,yup');
+            'cliUpgrade() with cliCore(): Ok,yup');
 }

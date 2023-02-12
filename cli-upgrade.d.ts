@@ -1,10 +1,4 @@
 /**
- * https://www.npmjs.com/package/@0bdx/cli-upgrade
- * @version 0.0.2
- * @license Copyright (c) 2023 0bdx <0@0bdx.com> (0bdx.com)
- * SPDX-License-Identifier: MIT
- */
-/**
  * The main starter for 0dbx's upgrading cli app.
  *
  * @param   {string[]}  argv

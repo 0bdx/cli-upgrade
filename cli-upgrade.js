@@ -1,9 +1,11 @@
 /**
  * https://www.npmjs.com/package/@0bdx/cli-upgrade
- * @version 0.0.2
+ * @version 0.0.3
  * @license Copyright (c) 2023 0bdx <0@0bdx.com> (0bdx.com)
  * SPDX-License-Identifier: MIT
  */
+import { cliCore } from '@0bdx/cli-core';
+
 /**
  * The main starter for 0dbx's upgrading cli app.
  *
@@ -24,7 +26,7 @@ function cliUpgrade(argv) {
             } argv[${i}] is type '${typeof a}' not 'string'`);
     });
 
-    return `cliUpgrade(): ${argv}`;
+    return `cliUpgrade() with ${cliCore()}: ${argv}`;
 }
 
 export { cliUpgrade };

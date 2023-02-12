@@ -35,11 +35,13 @@
 Clone the repository, and `cd` into it:  
 `git clone git@github.com:0bdx/cli-upgrade.git && cd cli-upgrade`
 
-Install the three dev-dependencies:  
+Install the four dev-dependencies and one dependency:  
 `npm i`  
 @0bdx/build-helpers 0.0.4, 1 package, 22 kB for 6 items.  
+@rollup/plugin-node-resolve 15.0.1, 16 packages, 560 kB for 291 items.  
 @types/node 18.13.0, 1 package, 3.6 MB for 126 items.  
 rollup 3.15.0, 2 packages, 2.6 MB for 31 items.  
+@0bdx/cli-core 0.0.1, 1 package, 3 kB for 6 items.  
 
 Open the `cli-upgrade` project in VS Code:  
 `code .`
@@ -106,7 +108,7 @@ touch cli-upgrade.d.ts cli-upgrade.js
 
 ```sh
 npm init --yes
-sed -ix 's/: "1.0.0",/: "0.0.2",/' *e.json
+sed -ix 's/: "1.0.0",/: "0.0.1",/' *e.json
 sed -ix 's/keywords": \[/keywords": [ "init", "initialise" /' *e.json
 sed -ix 's/: "ISC",/: "MIT",/' *e.json
 A=(§{1..4},\\n·);sed -ix "s/\"main/${A[*]}·\"main/;s/·/ /g" *e.json
@@ -131,14 +133,16 @@ sed -ix 's/§0/cli-upgrade./g' *e.json
 sed -ix 's/author": "/author": "0bdx <0@0bdx.com> (0bdx.com)/' *e.json
 rm package.jsonx
 npm install @0bdx/build-helpers -D
+npm install @rollup/plugin-node-resolve -D
 npm install @types/node -D
 npm install rollup -D
+npm install @0bdx/cli-core
 ```
 
 1. Create a default __package.json__ file:  
    `npm init --yes`
-2. Change the version to 0.0.2:  
-   `sed -ix 's/: "1.0.0",/: "0.0.2",/' *e.json`
+2. Change the version to 0.0.1:  
+   `sed -ix 's/: "1.0.0",/: "0.0.1",/' *e.json`
 3. Add keywords, for better [npmjs.org](http://npmjs.org) searchability:  
    `sed -ix 's/keywords": \[/keywords": [ "init", "initialise" /' *e.json`
 4. Change the license to MIT:  
@@ -180,10 +184,13 @@ npm install rollup -D
     `sed -ix 's/author": "/author": "0bdx <0@0bdx.com> (0bdx.com)/' *e.json`
 15. Delete the temporary __package.jsonx__ file:  
     `rm package.jsonx`
-16. Install three dev-dependencies:  
+16. Install four dev-dependencies:  
     `npm install @0bdx/build-helpers -D` 0.0.4, 1 package, 22 kB for 6 items  
+    `npm install @rollup/plugin-node-resolve -D` 15.0.1, 16 packages, 560 kB for 291 items  
     `npm install @types/node -D` 18.13.0, 1 package, 3.6 MB for 126 items  
     `npm install rollup -D` 3.15.0, 2 packages, 2.6 MB for 31 items  
+17. Install one dependency:  
+    `npm install @0bdx/cli-core` 0.0.1, 1 package, 3 kB for 6 items  
 
 ### __5. Fix the package name__
 

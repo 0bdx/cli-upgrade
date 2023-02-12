@@ -1,6 +1,6 @@
 {
   "name": "@0bdx/cli-upgrade",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Command line utility for upgrading 0bdx apps, libraries and websites.",
   "type": "module",
   "files": [
@@ -16,11 +16,13 @@
   },
   "main": "cli-upgrade.js",
   "dependencies": {
-    "fsevents": "^2.3.2"
+    "@0bdx/cli-core": "^0.0.1"
   },
   "devDependencies": {
     "@0bdx/build-helpers": "^0.0.4",
+    "@rollup/plugin-node-resolve": "^15.0.1",
     "@types/node": "^18.13.0",
+    "fsevents": "^2.3.2",
     "rollup": "^3.15.0"
   },
   "scripts": {

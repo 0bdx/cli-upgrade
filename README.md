@@ -2,7 +2,7 @@
 
 Command line utility for upgrading 0bdx apps, libraries and websites.
 
-∅&nbsp; __Version:__ 0.0.2  
+∅&nbsp; __Version:__ 0.0.3  
 ∅&nbsp; __NPM:__ <https://www.npmjs.com/package/@0bdx/cli-upgrade>  
 ∅&nbsp; __Repo:__ <https://github.com/0bdx/cli-upgrade>  
 ∅&nbsp; __Homepage:__ <https://0bdx.com/cli-upgrade>
